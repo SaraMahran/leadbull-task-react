@@ -1,0 +1,66 @@
+.year-updates-container {
+  background: linear-gradient(45deg, #3d2727, #303031, #283638);
+  color: #fff;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 8px;
+  margin-top: 500px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.year-updates-header {
+  font-size: 2rem;
+  text-align: left;
+
+  color: #00bfff;
+}
+
+.year-updates-subheader {
+  font-size: 1.2rem;
+  text-align: center;
+  text-align: left;
+}
+
+.year-updates-description {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.year-updates-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: baseline;
+}
+
+.year-update-item {
+  margin-bottom: 20px;
+}
+
+.year-update-title {
+  font-size: 1.5rem;
+  color: #00bfff;
+}
+
+.year-update-description {
+  font-size: 1rem;
+}
+
+.progress-bar {
+  background: #555;
+  border-radius: 5px;
+  height: 10px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.progress-fill {
+  background: #00bfff;
+  height: 100%;
+  border-radius: 5px;
+}

@@ -1,0 +1,166 @@
+:root {
+  --main-gradient-color: linear-gradient(to right, #4a1221, #2f3d63, #2c2c2c);
+  --second-gradient-color: linear-gradient(-180deg, #a0283f, #3c3c54, #027fca);
+}
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  position: relative;
+  margin-bottom: 400px;
+}
+.profile-header {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.company-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 80%;
+  /* margin-left: auto;
+  margin-right: 0; */
+}
+.company-name p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: var(--second-gradient-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+  position: absolute;
+}
+
+.company-name span {
+  color: #027fca;
+}
+
+.company-name span {
+  color: #0099ff;
+}
+
+/* Vision, Values, Mission Cards */
+.vision,
+.values,
+.mission {
+  background: var(--main-gradient-color);
+  border: 1px solid rgba(0, 153, 255, 0.8); /* Blue border */
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 300px;
+  position: absolute;
+}
+
+.vision {
+  top: 20%;
+  left: 21%;
+  margin-top: 50px;
+}
+
+.values {
+  top: 55%;
+  left: 40%;
+}
+
+.mission {
+  top: 80%;
+  left: 20%;
+  margin-top: 20px;
+}
+
+.company-name p {
+  left: 80%;
+  top: 50%;
+}
+
+/* Heading and Paragraph Styles */
+.vision h3,
+.values h3,
+.mission h3 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.vision h3::selection,
+.values h3::selection,
+.mission h3::selection {
+  background-color: #1b252c;
+}
+
+.vision p,
+.values p,
+.mission p {
+  font-size: 16px;
+  color: #b6b4b4;
+}
+
+.vision p::selection,
+.values p::selection,
+.mission p::selection {
+  font-size: 16px;
+  color: #b6b4b4;
+
+  background-color: #1b252c;
+}
+
+.vision,
+.mission,
+.values h3,
+p {
+  color: #fff;
+}
+
+.profile-container::before,
+.profile-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      45deg,
+      transparent 75%,
+      rgba(255, 255, 255, 0.05) 75%
+    ),
+    linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%);
+  background-size: 50px 50px; /* Controls the size of the squares */
+  opacity: 0.1; /* Makes the squares subtle */
+  z-index: 0; /* Ensure the squares are behind the content */
+}
+
+.profile-container .grid-item {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.05
+  ); /* Light color with some transparency */
+  position: absolute;
+  z-index: 1;
+}
+
+.square-1 {
+  top: 20%;
+  left: 10%;
+}
+
+.square-2 {
+  top: 50%;
+  left: 70%;
+}
+
+.square-3 {
+  top: 80%;
+  left: 20%;
+}

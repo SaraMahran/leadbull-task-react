@@ -1,0 +1,112 @@
+.updates {
+  position: relative; /* Allows the background squares to be positioned relative to this section */
+  padding: 40px;
+  background-color: #2c2c2c; /* Dark background color for contrast */
+  color: #fff; /* Text color */
+  overflow: hidden; /* Ensures background squares don't overflow the section */
+}
+
+.updates-text {
+  margin-top: 300px;
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: #1368a6;
+}
+
+.updates-list li {
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+}
+
+.updates-list .updates-content {
+  font-size: 1.6rem;
+}
+
+.updates::before,
+.updates::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      45deg,
+      transparent 75%,
+      rgba(255, 255, 255, 0.05) 75%
+    ),
+    linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%);
+  background-size: 50px 50px; /* Controls the size of the squares */
+  opacity: 0.1; /* Makes the squares subtle */
+  z-index: 0; /* Ensure the squares are behind the content */
+}
+
+.updates .grid-item {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.05
+  ); /* Light color with some transparency */
+  position: absolute;
+  z-index: 1;
+}
+
+.updates-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      45deg,
+      transparent 75%,
+      rgba(255, 255, 255, 0.05) 75%
+    ),
+    linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%);
+  background-size: 50px 50px;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.updates-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      45deg,
+      transparent 75%,
+      rgba(255, 255, 255, 0.05) 75%
+    ),
+    linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%);
+  background-size: 50px 50px;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.updates-list li::before {
+  content: "•";
+  padding-left: 10px;
+}
+
+.square-1 {
+  top: 20%;
+  left: 10%;
+}
+
+.square-2 {
+  top: 50%;
+  left: 70%;
+}
+
+.square-3 {
+  top: 80%;
+  left: 20%;
+}

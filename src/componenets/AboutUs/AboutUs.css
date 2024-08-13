@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  height: 100vh;
+  padding: 20px;
+  background-color: #2d2d2d;
+}
+
+.history,
+.about-us {
+  flex: 1;
+  margin-top: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 0;
+  /* margin: 200px 100px; */
+}
+
+.history-header,
+.about-us-header {
+  color: #1368a6;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.history-text,
+.about-us-text {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
